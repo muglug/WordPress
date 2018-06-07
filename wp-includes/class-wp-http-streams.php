@@ -359,7 +359,7 @@ class WP_Http_Streams {
 	 *
 	 * @since 3.7.0
 	 *
-	 * @param stream $stream The PHP Stream which the SSL request is being made over
+	 * @param resource $stream The PHP Stream which the SSL request is being made over
 	 * @param string $host The hostname being requested
 	 * @return bool If the cerficiate presented in $stream is valid for $host
 	 */

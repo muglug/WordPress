@@ -295,7 +295,7 @@ class WP_Term_Query {
 	 *
 	 * @global wpdb $wpdb WordPress database abstraction object.
 	 *
-	 * @return array List of terms.
+	 * @return array|int List of terms.
 	 */
 	public function get_terms() {
 		global $wpdb;

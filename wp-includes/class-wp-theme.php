@@ -852,8 +852,8 @@ final class WP_Theme implements ArrayAccess {
 	 * @staticvar array $tags_list
 	 *
 	 * @param string $header Theme header. Name, Description, Author, Version, ThemeURI, AuthorURI, Status, Tags.
-	 * @param string $value Value to translate.
-	 * @return string Translated value.
+	 * @param string|string[] $value Value to translate.
+	 * @return stringg|string[] Translated value.
 	 */
 	private function translate_header( $header, $value ) {
 		switch ( $header ) {

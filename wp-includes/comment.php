@@ -920,7 +920,7 @@ function wp_check_comment_flood( $is_flood, $ip, $email, $date, $avoid_die = fal
  * @since 2.7.0
  *
  * @param WP_Comment[] $comments Array of comments
- * @return WP_Comment[] Array of comments keyed by comment_type.
+ * @return WP_Comment[][] Array of comments keyed by comment_type.
  */
 function separate_comments( &$comments ) {
 	$comments_by_type = array(
@@ -2984,7 +2984,7 @@ function _prime_comment_caches( $comment_ids, $update_meta_cache = true ) {
  * @access private
  * @since 2.7.0
  *
- * @param WP_Post  $posts Post data object.
+ * @param WP_Post[]  $posts Post data object.
  * @param WP_Query $query Query object.
  * @return array
  */

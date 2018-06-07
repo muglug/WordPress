@@ -4115,7 +4115,7 @@ class WP_Query {
 	 * @global int             $numpages
 	 *
 	 * @param WP_Post|object|int $post WP_Post instance or Post ID/object.
-	 * @return true True when finished.
+	 * @return true|null True when finished.
 	 */
 	public function setup_postdata( $post ) {
 		global $id, $authordata, $currentday, $currentmonth, $page, $pages, $multipage, $more, $numpages;

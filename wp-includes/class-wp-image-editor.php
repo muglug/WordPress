@@ -386,7 +386,7 @@ abstract class WP_Image_Editor {
 	 *
 	 * @since 3.5.0
 	 *
-	 * @param string|stream $filename
+	 * @param string|resource $filename
 	 * @param callable $function
 	 * @param array $arguments
 	 * @return bool
