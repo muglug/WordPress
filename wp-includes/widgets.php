@@ -1541,7 +1541,7 @@ function wp_widget_rss_output( $rss, $args = array() ) {
  *
  * @since 2.5.0
  *
- * @param array|string $args Values for input fields.
+ * @param array $args Values for input fields.
  * @param array $inputs Override default display options.
  */
 function wp_widget_rss_form( $args, $inputs = null ) {

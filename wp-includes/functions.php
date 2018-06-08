@@ -984,7 +984,7 @@ function wp_remote_fopen( $uri ) {
  *
  * @since 2.0.0
  *
- * @global WP       $wp_locale
+ * @global WP       $wp
  * @global WP_Query $wp_query
  * @global WP_Query $wp_the_query
  *

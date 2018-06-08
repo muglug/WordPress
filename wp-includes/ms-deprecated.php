@@ -338,7 +338,7 @@ function get_user_id_from_string( $string ) {
 	if ( is_email( $string ) )
 		$user = get_user_by( 'email', $string );
 	elseif ( is_numeric( $string ) )
-		return $string;
+		return (int) $string;
 	else
 		$user = get_user_by( 'login', $string );
 

@@ -266,7 +266,7 @@ class SimplePie_IRI
 	 *
 	 * @param IRI|string $base (Absolute) Base IRI
 	 * @param IRI|string $relative Relative IRI
-	 * @return IRI|false
+	 * @return SimplePie_IRI
 	 */
 	public static function absolutize($base, $relative)
 	{
