@@ -508,7 +508,7 @@ class WP_User_Search {
 	 * @param string $search_term Search terms string.
 	 * @param int $page Optional. Page ID.
 	 * @param string $role Role name.
-	 * @return WP_User_Search
+	 * @return void
 	 */
 	public function WP_User_Search( $search_term = '', $page = '', $role = '' ) {
 		self::__construct( $search_term, $page, $role );
