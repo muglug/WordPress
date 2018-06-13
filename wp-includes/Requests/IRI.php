@@ -249,9 +249,9 @@ class Requests_IRI {
 	 *
 	 * Returns false if $base is not absolute, otherwise an IRI.
 	 *
-	 * @param IRI|string $base (Absolute) Base IRI
-	 * @param IRI|string $relative Relative IRI
-	 * @return IRI|false
+	 * @param Requests_IRI|string $base (Absolute) Base IRI
+	 * @param Requests_IRI|string $relative Relative IRI
+	 * @return Requests_IRI|false
 	 */
 	public static function absolutize($base, $relative) {
 		if (!($relative instanceof Requests_IRI)) {

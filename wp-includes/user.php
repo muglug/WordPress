@@ -2122,7 +2122,7 @@ function _get_additional_user_keys( $user ) {
  *
  * @since 3.7.0
  *
- * @param WP_User $user Optional. WP_User object.
+ * @param WP_User|stdClass $user Optional. WP_User object.
  * @return array Array of contact methods and their labels.
  */
 function wp_get_user_contact_methods( $user = null ) {

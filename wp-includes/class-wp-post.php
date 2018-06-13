@@ -204,7 +204,7 @@ final class WP_Post {
 	 * A numeric string, for compatibility reasons.
 	 *
 	 * @since 3.5.0
-	 * @var string
+	 * @var string|int
 	 */
 	public $comment_count = 0;
 

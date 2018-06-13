@@ -140,7 +140,7 @@ class SimplePie_Item
 	 * @see http://simplepie.org/wiki/faq/supported_xml_namespaces
 	 * @param string $namespace The URL of the XML namespace of the elements you're trying to access
 	 * @param string $tag Tag name
-	 * @return array
+	 * @return array|null
 	 */
 	public function get_item_tags($namespace, $tag)
 	{
@@ -2893,7 +2893,7 @@ class SimplePie_Item
 	 * @since 1.0
 	 * @link http://www.w3.org/2003/01/geo/ W3C WGS84 Basic Geo
 	 * @link http://www.georss.org/ GeoRSS
-	 * @return string|null
+	 * @return float|null
 	 */
 	public function get_latitude()
 	{
@@ -2921,7 +2921,7 @@ class SimplePie_Item
 	 * @since 1.0
 	 * @link http://www.w3.org/2003/01/geo/ W3C WGS84 Basic Geo
 	 * @link http://www.georss.org/ GeoRSS
-	 * @return string|null
+	 * @return float|null
 	 */
 	public function get_longitude()
 	{

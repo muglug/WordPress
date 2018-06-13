@@ -2582,7 +2582,7 @@ class SimplePie
 	 * @since 1.0
 	 * @link http://www.w3.org/2003/01/geo/ W3C WGS84 Basic Geo
 	 * @link http://www.georss.org/ GeoRSS
-	 * @return string|null
+	 * @return float|null
 	 */
 	public function get_latitude()
 	{
@@ -2611,7 +2611,7 @@ class SimplePie
 	 * @since 1.0
 	 * @link http://www.w3.org/2003/01/geo/ W3C WGS84 Basic Geo
 	 * @link http://www.georss.org/ GeoRSS
-	 * @return string|null
+	 * @return float|null
 	 */
 	public function get_longitude()
 	{

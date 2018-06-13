@@ -26,6 +26,9 @@ if (!defined('ENT_SUBSTITUTE')) { // PHP5.3 adds ENT_IGNORE, PHP5.4 adds ENT_SUB
 	define('ENT_SUBSTITUTE', (defined('ENT_IGNORE') ? ENT_IGNORE : 8));
 }
 
+// Load support library
+require_once(GETID3_INCLUDEPATH.'getid3.lib.php');
+
 // attempt to define temp dir as something flexible but reliable
 $temp_dir = ini_get('upload_tmp_dir');
 if ($temp_dir && (!is_dir($temp_dir) || !is_readable($temp_dir))) {
@@ -162,11 +165,6 @@ class getID3
 			if (get_magic_quotes_gpc()) {
 				$this->startup_error .= 'magic_quotes_gpc must be disabled before running getID3(). Surround getid3 block by set_magic_quotes_gpc(0) and set_magic_quotes_gpc(1).'."\n";
 			}
-		}
-
-		// Load support library
-		if (!include_once(GETID3_INCLUDEPATH.'getid3.lib.php')) {
-			$this->startup_error .= 'getid3.lib.php is missing or corrupt'."\n";
 		}
 
 		if ($this->option_max_2gb_check === null) {

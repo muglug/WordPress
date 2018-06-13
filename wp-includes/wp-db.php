@@ -537,7 +537,7 @@ class wpdb {
 	 * Database Handle
 	 *
 	 * @since 0.71
-	 * @var resource
+	 * @var mysqli|null
 	 */
 	protected $dbh;
 

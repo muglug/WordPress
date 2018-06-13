@@ -1434,7 +1434,7 @@ function single_term_title( $prefix = '', $display = true ) {
  *
  * @param string $prefix  Optional. What to display before the title.
  * @param bool   $display Optional, default is true. Whether to display or retrieve title.
- * @return string|void Title when retrieving.
+ * @return string|false|null Title when retrieving.
  */
 function single_month_title( $prefix = '', $display = true ) {
 	global $wp_locale;

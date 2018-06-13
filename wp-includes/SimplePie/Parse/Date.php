@@ -151,6 +151,8 @@ class SimplePie_Parse_Date
 	/**
 	 * List of months, calendar month name => calendar month number
 	 *
+	 * @psalm-suppress DuplicateArrayKey
+	 *
 	 * @access protected
 	 * @var array
 	 */
@@ -367,7 +369,6 @@ class SimplePie_Parse_Date
 		'GFT' => -10800,
 		'GILT' => 43200,
 		'GIT' => -32400,
-		'GST' => 14400,
 		'GST' => -7200,
 		'GYT' => -14400,
 		'HAA' => -10800,
@@ -586,7 +587,7 @@ class SimplePie_Parse_Date
 	 * @final
 	 * @access public
 	 * @param string $date Date to parse
-	 * @return int Timestamp corresponding to date string, or false on failure
+	 * @return int|false Timestamp corresponding to date string, or false on failure
 	 */
 	public function parse($date)
 	{
@@ -634,7 +635,7 @@ class SimplePie_Parse_Date
 	 * spaces to be used as the time seperator (including more than one))
 	 *
 	 * @access protected
-	 * @return int Timestamp
+	 * @return int|false Timestamp
 	 */
 	public function date_w3cdtf($date)
 	{
@@ -766,7 +767,7 @@ class SimplePie_Parse_Date
 	 * Parse RFC2822's date format
 	 *
 	 * @access protected
-	 * @return int Timestamp
+	 * @return int|false Timestamp
 	 */
 	public function date_rfc2822($date)
 	{
@@ -859,7 +860,7 @@ class SimplePie_Parse_Date
 	 * Parse RFC850's date format
 	 *
 	 * @access protected
-	 * @return int Timestamp
+	 * @return int|false Timestamp
 	 */
 	public function date_rfc850($date)
 	{
@@ -924,7 +925,7 @@ class SimplePie_Parse_Date
 	 * Parse C99's asctime()'s date format
 	 *
 	 * @access protected
-	 * @return int Timestamp
+	 * @return int|false Timestamp
 	 */
 	public function date_asctime($date)
 	{
@@ -966,7 +967,7 @@ class SimplePie_Parse_Date
 	 * Parse dates using strtotime()
 	 *
 	 * @access protected
-	 * @return int Timestamp
+	 * @return int|false Timestamp
 	 */
 	public function date_strtotime($date)
 	{

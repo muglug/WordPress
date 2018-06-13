@@ -659,7 +659,7 @@ class WP_Customize_Setting {
 	 * @since 3.4.0
 	 *
 	 * @param mixed $value The value to update.
-	 * @return bool The result of saving the value.
+	 * @return bool|null The result of saving the value.
 	 */
 	protected function update( $value ) {
 		$id_base = $this->id_data['base'];

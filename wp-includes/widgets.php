@@ -328,7 +328,7 @@ function is_registered_sidebar( $sidebar_id ) {
  *
  * @param int|string $id              Widget ID.
  * @param string     $name            Widget display title.
- * @param callable   $output_callback Run when widget is called.
+ * @param callable|string $output_callback Run when widget is called.
  * @param array      $options {
  *     Optional. An array of supplementary widget options for the instance.
  *

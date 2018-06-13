@@ -69,7 +69,7 @@ class SimplePie_Content_Type_Sniffer
 	/**
 	 * Create an instance of the class with the input file
 	 *
-	 * @param SimplePie_Content_Type_Sniffer $file Input file
+	 * @param SimplePie_File $file Input file
 	 */
 	public function __construct($file)
 	{

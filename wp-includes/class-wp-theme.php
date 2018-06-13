@@ -626,7 +626,7 @@ final class WP_Theme implements ArrayAccess {
 	 * @since 3.4.0
 	 *
 	 * @param string $key Type of data to store (theme, screenshot, headers, post_templates)
-	 * @param string $data Data to store
+	 * @param mixed $data Data to store
 	 * @return bool Return value from wp_cache_add()
 	 */
 	private function cache_add( $key, $data ) {
@@ -853,7 +853,7 @@ final class WP_Theme implements ArrayAccess {
 	 *
 	 * @param string $header Theme header. Name, Description, Author, Version, ThemeURI, AuthorURI, Status, Tags.
 	 * @param string|string[] $value Value to translate.
-	 * @return stringg|string[] Translated value.
+	 * @return string|string[] Translated value.
 	 */
 	private function translate_header( $header, $value ) {
 		switch ( $header ) {
@@ -1572,8 +1572,8 @@ final class WP_Theme implements ArrayAccess {
 	 *
 	 * @since 3.4.0
 	 *
-	 * @param string $a First name.
-	 * @param string $b Second name.
+	 * @param self $a First name.
+	 * @param self $b Second name.
 	 * @return int Negative if `$a` falls lower in the natural order than `$b`. Zero if they fall equally.
 	 *             Greater than 0 if `$a` falls higher in the natural order than `$b`. Used with usort().
 	 */

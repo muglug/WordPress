@@ -742,7 +742,7 @@ class WP_Customize_Nav_Menu_Item_Setting extends WP_Customize_Setting {
 	 * @param array|false $value The menu item array to update. If false, then the menu item will be deleted
 	 *                           entirely. See WP_Customize_Nav_Menu_Item_Setting::$default for what the value
 	 *                           should consist of.
-	 * @return null|void
+	 * @return void
 	 */
 	protected function update( $value ) {
 		if ( $this->is_updated ) {

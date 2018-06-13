@@ -455,6 +455,7 @@ class WP_Comment_Query {
 		$_comments = apply_filters_ref_array( 'the_comments', array( $_comments, &$this ) );
 
 		// Convert to WP_Comment instances
+		/** @var WP_Comment[] $comments */
 		$comments = array_map( 'get_comment', $_comments );
 
 		if ( $this->query_vars['hierarchical'] ) {

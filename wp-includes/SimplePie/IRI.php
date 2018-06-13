@@ -79,7 +79,7 @@ class SimplePie_IRI
 	/**
 	 * Port
 	 *
-	 * @var string
+	 * @var int
 	 */
 	protected $port = null;
 
@@ -264,9 +264,9 @@ class SimplePie_IRI
 	 *
 	 * Returns false if $base is not absolute, otherwise an IRI.
 	 *
-	 * @param IRI|string $base (Absolute) Base IRI
-	 * @param IRI|string $relative Relative IRI
-	 * @return SimplePie_IRI
+	 * @param SimplePie_IRI|string $base (Absolute) Base IRI
+	 * @param SimplePie_IRI|string $relative Relative IRI
+	 * @return SimplePie_IRI|false
 	 */
 	public static function absolutize($base, $relative)
 	{
@@ -359,7 +359,7 @@ class SimplePie_IRI
 	 * Parse an IRI into scheme/authority/path/query/fragment segments
 	 *
 	 * @param string $iri
-	 * @return array
+	 * @return array|false
 	 */
 	protected function parse_iri($iri)
 	{
@@ -611,6 +611,7 @@ class SimplePie_IRI
 		// at the first byte!).
 		$string = '';
 		$remaining = 0;
+		$character = null;
 
 		// Loop over each and every byte, and set $value to its value
 		for ($i = 1, $len = count($bytes); $i < $len; $i++)
@@ -1144,7 +1145,7 @@ class SimplePie_IRI
 	/**
 	 * Get the complete IRI
 	 *
-	 * @return string
+	 * @return string|false
 	 */
 	public function get_iri()
 	{
@@ -1195,7 +1196,7 @@ class SimplePie_IRI
 	/**
 	 * Get the complete iauthority
 	 *
-	 * @return string
+	 * @return string|null
 	 */
 	protected function get_iauthority()
 	{

@@ -474,7 +474,7 @@ class WP_Customize_Nav_Menu_Setting extends WP_Customize_Setting {
 	 *     @type int    $parent      The id of the parent term. Default 0.
 	 *     @type bool   $auto_add    Whether pages will auto_add to this menu. Default false.
 	 * }
-	 * @return null|void
+	 * @return void
 	 */
 	protected function update( $value ) {
 		if ( $this->is_updated ) {

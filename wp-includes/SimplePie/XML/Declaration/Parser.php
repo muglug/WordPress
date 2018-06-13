@@ -71,7 +71,7 @@ class SimplePie_XML_Declaration_Parser
 	 * Standalone
 	 *
 	 * @access public
-	 * @var bool
+	 * @var bool|string
 	 */
 	var $standalone = false;
 
@@ -79,7 +79,7 @@ class SimplePie_XML_Declaration_Parser
 	 * Current state of the state machine
 	 *
 	 * @access private
-	 * @var string
+	 * @var string|false
 	 */
 	var $state = 'before_version_name';
 
